@@ -1,0 +1,25 @@
+<h1 class="AddMenuItem-title">New Menu Item</h1>
+
+<%= form_with(url: "/menu_items", method: "POST", class: "AddMenuItem") do %>
+    <div class="AddMenuItem-section">
+        <p class="AddMenuItem-text"> Menu Category </p>
+        <%= text_field_tag("menu_category_id", nil, class: "AddMenuItem-input", autofocus: true) %>
+    </div>
+    <div class="AddMenuItem-section">
+        <p class="AddMenuItem-text"> Name </p>
+        <%= text_field_tag("name", nil, class: "AddMenuItem-input") %>
+    </div>
+    <div class="AddMenuItem-section">
+        <p class="AddMenuItem-text"> Description </p>
+        <%= text_field_tag("description", nil, class: "AddMenuItem-input") %></p>
+    </div>
+    <div class="AddMenuItem-section">
+        <p class="AddMenuItem-text"> Price </p>
+        <%= text_field_tag("price", nil, class: "AddMenuItem-input") %>
+    </div>
+    <div class="AddMenuItem-section">
+        <%= button_tag("Add Menu Item", type: "submit", class: "AddMenu-button") %> 
+    </div>
+<% end %>
+
+<p style="text-align: center;"><%= link_to 'Go Back to menu', menu_items_path %></p>

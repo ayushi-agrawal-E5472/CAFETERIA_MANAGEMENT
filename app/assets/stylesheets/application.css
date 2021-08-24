@@ -1,0 +1,118 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ *{
+     background-color: black;
+ }
+ .Menu-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+.Cart-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.Menu-text, .CartItems-text {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: antiquewhite;
+    border: 3px solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.Menu-title, .AddMenuItem-title, .Cart-title{
+    font-family: Verdana;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: antiquewhite;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.AddMenuItem-display {
+    text-align: center;
+}
+
+.AddMenuItem-title {
+    text-align: center;
+    background-color: darkgoldenrod;
+    color: antiquewhite;
+    padding: 10px;
+    font-size: 40px;
+    font-family: Verdana;
+}
+
+.AddMenuItem-section {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 30px;
+}
+
+.AddMenuItem-text {
+    margin-bottom: 5px;    
+}
+
+.AddMenuItem-input {
+    padding: 10px;
+    font-size: 22px;
+}
+
+.AddMenu-button {
+    padding: 10px;
+    font-size: 22px;
+    background-color: darkgoldenrod;
+    color: antiquewhite;
+
+}
+
+.AddToCart-button {
+    background-color: darkgoldenrod;
+    color: antiquewhite;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.Cart-symbol {
+    height: 70px;
+    width: 100px;
+}
+
+.Cart-subtotal {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.OrderThanks {
+    font-size: 75px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}

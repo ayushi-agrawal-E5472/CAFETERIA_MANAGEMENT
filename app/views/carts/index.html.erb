@@ -1,0 +1,16 @@
+<h2 class="Cart-title">Your Cart</h2>
+<div class="Cart-items">
+  <% @current_user.carts.first.cart_items.each do |item| %>
+    <div class="CartItems-text">
+      <p>Item: <%= item.menu_item_name %></p>
+      <p> Price: <%= item.menu_item_price %>₹</p>
+      <p> Quantity: <%= item.quantity %></p>
+      <p> Total Price: <%= item.total_price %>₹</p>
+    </div>
+  <% end %>
+  
+</div>
+<footer class="Cart-subtotal">
+  <p> Sub Total: <%= @current_user.carts.first.sub_total %>₹ </p>
+  <%= button_to "Proceed to checkout",  "/carts/#{@cart.id}", method: "get" %>
+</footer>

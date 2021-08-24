@@ -1,0 +1,23 @@
+<div class="Menu-title">
+    <div><h1>MENU</h1></div>
+    <div>
+        <%= link_to "View cart", carts_path %>
+    
+    </div>
+</div>
+<div class="Menu-display">
+    <% MenuItem.all.each do |menu_item|%>
+    <div class="Menu-text">
+        <p>Name:<%= menu_item.name %></p>
+        <p>Description:<%= menu_item.description %></p>
+        <p>Price:<%= menu_item.price %>₹</p>
+        <%= button_to "Add to Cart", cart_items_path(menu_item_id: menu_item.id), class: "AddToCart-button"%>
+    </div>
+    <% end %>
+</div>
+
+<% if @current_user.role == "owner" %>
+    <div class="AddMenuItem-display">
+        <%= link_to 'New Menu Item', new_menu_item_path %>
+    </div>
+<% end %>

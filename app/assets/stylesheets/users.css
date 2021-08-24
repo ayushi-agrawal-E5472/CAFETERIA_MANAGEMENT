@@ -1,0 +1,33 @@
+.UsersNew {
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    height: 100%;
+}
+
+.NewUsers-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.Form-section {
+    margin-bottom: 20px;
+}
+
+.Form-input {
+    font-size: 20px;
+    padding: 8px;
+}
+
+.FormInput-label {
+    margin-bottom: 8px;
+}
+
+.Form-submit {
+    font-size: 20px;
+    padding: 8px;
+    background-color: darkgoldenrod;
+    border-radius: 4px 4px 4px;
+    border: 1px solid white;
+    color: antiquewhite;
+}
